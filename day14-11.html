@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <button>Click</button> <br>
+    <div style="background: #98bf21;height: 100px; width: 100px; position: absolute;">hi</div>
+
+    <script>
+        // $('button').click(function(){
+        //     let div = $('div');
+        //     div.animate({height:"300px",opacity:'0.4'},'slow');
+        //     div.animate({width:"300px",opacity:'0.8'},'slow');
+        //     div.animate({height:"100px",opacity:'0.4'},'slow');
+        //     div.animate({width:"100px",opacity:'0.8'},'slow');
+        // })
+
+        $('button').click(function(){
+            let div = $('div');
+            div.animate({left:'100px'},'slow');
+            div.animate({fontSize:'2em'},'slow');
+        })
+    </script>
+</body>
+</html>

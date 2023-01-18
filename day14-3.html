@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <style>
+        /* input[type=text] */
+    </style>
+</head>
+<body>
+    <div><input type="text"></div>
+    <div><input type="password"></div>
+    <div><button>확인</button></div>
+    <div>
+        <input type="checkbox" id="css" checked="checked">
+        <label for="css">css</label>
+    </div>
+    <div>
+        <select>
+            <option>과목선택</option>
+            <option>javascript</option>
+            <option selected>jQuery</option>
+        </select>
+        <textarea cols="20" rows="5" disabled="disabled">javascript</textarea>
+    </div>
+    <script>
+        $('input:text').css('background','red');
+        $('input:password').css('background','orange');
+        // $(':button').css('background','yellow');
+        $('button').css('background','purple');
+        $('input:checkbox + label').css('background','yellow');
+        $('option:selected').css('color','blue');
+        $('textarea:disabled').css('background','pink')
+    </script>
+</body>
+</html>
